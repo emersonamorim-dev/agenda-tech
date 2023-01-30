@@ -1,4 +1,4 @@
-# FlexLayoutRxjsTest
+## Agenda Tech codificação em Typescript com uso do framework Angular usando os principais operadores do RxJs como: Observable, Subscription, switchMap, map, BehaviorSubject, Observable, tap e share, EMPTY e catchError e armazenando dados no arquivo db.json.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.10.
 
