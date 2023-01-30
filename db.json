@@ -1,0 +1,22 @@
+{
+  "eventos": [
+    {
+      "id": 16,
+      "titulo": "Angular London",
+      "descricao": "Angular London é o maior encontro Angular da Europa. Realizamos encontros em vários locais dentro e ao redor de Londres. Nosso encontro se concentra em aprender sobre o Angular, compartilhar conhecimento e fazer networking com outros angulários.",
+      "likes": 3
+    },
+    {
+      "id": 17,
+      "titulo": "ngRome",
+      "descricao": "Seja você iniciante, intermediário ou especialista, esta será a melhor oportunidade para aprender sobre as últimas tendências do mundo Angular e das tecnologias da web.",
+      "likes": 6
+    },
+    {
+      "id": 18,
+      "titulo": "AngularDay",
+      "descricao": "angularday 2022 é a 6ª edição da conferência angular italiana, organizada pelo GrUSP, organizadores de eventos como phpday e jsday.",
+      "likes": 7
+    }
+  ]
+}

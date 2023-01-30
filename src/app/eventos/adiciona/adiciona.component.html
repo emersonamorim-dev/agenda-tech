@@ -1,0 +1,36 @@
+<div class="container">
+  <div
+    class="fnt-semibold"
+    fxLayout="row"
+    fxLayoutAlign="start center"
+    fxLayoutGap="10px"
+  >
+    <a routerLink="/" class="fnt-size-12 text-black">Voltar</a>
+    <div class="fnt-size-24">Adicionar Novo Evento</div>
+  </div>
+  <div>
+    <div class="form-group">
+      <div>Título</div>
+      <input
+        type="text"
+        [(ngModel)]="eventoForm.titulo"
+        class="form-field-input"
+      />
+    </div>
+    <div class="form-group">
+      <div>Descrição</div>
+      <input
+        type="text"
+        [(ngModel)]="eventoForm.descricao"
+        class="form-field-input"
+      />
+    </div>
+    <button
+      type="button"
+      (click)="adicionaNewEvento()"
+      class="common-btn cursor-pointer fnt-semibold btn-padding text-white bg-orange fnt-size-16"
+    >
+      Adicionar Evento
+    </button>
+  </div>
+</div>

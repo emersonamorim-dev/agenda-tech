@@ -1,0 +1,43 @@
+<div class="home-container" fxLayout="column" fxLayoutAlign="center start">
+  <div fxLayout="row" fxLayoutGap="8px">
+    <button
+      routerLink="/adiciona"
+      class="common-btn cursor-pointer fnt-semibold btn-padding text-white bg-orange fnt-size-16"
+    >
+      Adiconar Novo Evento
+    </button>
+    <button
+      (click)="refreshEventos()"
+      class="common-btn cursor-pointer fnt-semibold btn-padding text-white gray-bg fnt-size-16"
+    >
+      Atualizar
+    </button>
+  </div>
+  <div fxFlexFill fxLayout="column" class="eventos-wrapper">
+    <div
+      *ngFor="let item of eventoArr$ | async; trackBy: identify"
+      fxLayout="column"
+      class="evento-item"
+    >
+      <div class="evento-property fnt-semibold fnt-size-24">{{ item.titulo }}</div>
+      <div class="evento-property fnt-size-16">{{ item.descricao }}</div>
+      <div class="evento-property fnt-size-16">{{ item.likes }}</div>
+      <div fxLayout="row">
+        <button
+          [routerLink]="['/edite', item.id]"
+          fxFlex
+          class="evento-property gray-bg btn-padding fnt-size-16 cursor-pointer text-white"
+        >
+          Editar Evento
+        </button>
+        <button
+          
+          class="evento-property bg-orange btn-padding fnt-size-16 cursor-pointer text-white"
+          (click)="deleteItem(item.id)"
+        >
+          Apagar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
